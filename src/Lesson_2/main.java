@@ -1,5 +1,5 @@
 // Директория в Джава называется пакет
-package Lesson_2;
+package lesson_2;
 
 public class main {
     public static void main(String[] args){
