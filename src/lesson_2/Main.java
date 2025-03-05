@@ -1,7 +1,7 @@
 // Директория в Джава называется пакет
 package lesson_2;
 
-public class main {
+public class Main {
     public static void main(String[] args){
         // Method call
         getArithmeticOperations();
