@@ -29,6 +29,7 @@ public class Main{
         // Точка входа для всего кода
         // Method call вызов метода
         getBasicIO();
+        getBasicVariables();
     }
 
     // Lower Camel Case
@@ -97,5 +98,6 @@ public class Main{
         boolean myBoolean = true;
 
         String myName = "Archil Sikharulidze";
+        System.out.println(myName);
     }
 }
