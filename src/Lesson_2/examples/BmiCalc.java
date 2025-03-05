@@ -1,4 +1,4 @@
-package lesson_2_varibles_github.example;
+package Lesson_2_examples;
 
 import java.util.Scanner;
 
