@@ -1,5 +1,5 @@
 // Директория в Джава называется пакет
-package lesson_2_varibles_github;
+package Lesson_2;
 
 public class main {
     public static void main(String[] args){
