@@ -2,9 +2,9 @@ package lesson_3.hometask.task3_additional;
 
 public class Task1 {
     public static void main(String[] args) {
-        printFibonacciNumbers(11);
+        fibonacciNumbers(11);
     }
-    static void printFibonacciNumbers(int n) {
+    static void fibonacciNumbers(int n) {
         int f1 = 0, f2 = 1;
 
         System.out.print(f1 + " ");
