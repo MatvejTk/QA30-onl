@@ -7,13 +7,9 @@ public class Task6 {
 
         System.out.print(f1 + " ");
 
-        for (int i = 1; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.print(f2 + " ");
-            int next = f1 + f2;
-            f1 = f2;
-            f2 = next;
+           f2 -=5;
         }
     }
-
-
 }
