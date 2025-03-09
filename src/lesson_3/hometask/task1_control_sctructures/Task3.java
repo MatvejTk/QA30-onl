@@ -8,6 +8,12 @@ evenOdd();
     public static void evenOdd() {
         Scanner input = new Scanner (System.in);
         System.out.println("Please, enter integer number");
-
+        int number = input.nextInt();
+        if (number % 2 == 0) {
+            System.out.println("You inserted Even number");
+        }
+        else {
+            System.out.println("You inserted Odd number");
+        }
+        }
     }
-}
