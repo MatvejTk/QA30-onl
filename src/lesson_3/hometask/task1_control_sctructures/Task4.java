@@ -1,7 +1,7 @@
 package lesson_3.hometask.task1_control_sctructures;
 import java.util.Scanner;
 
-public class Temperature {
+public class Task4 {
     public static void main(String[] args) {
         temperatureCondition();
     }

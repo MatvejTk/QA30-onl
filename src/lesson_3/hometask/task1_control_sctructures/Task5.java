@@ -1,6 +1,6 @@
 package lesson_3.hometask.task1_control_sctructures;
 import java.util.Scanner;
-public class Rainbow {
+public class Task5 {
     public static void main (String[] args) {
         rainbowColorNumber();
     }
