@@ -12,9 +12,9 @@ public class Task2 {
     float amount = input.nextFloat();
     System.out.println("Please enter number of months: ");
     int time = input.nextInt();
+        float newAmount = amount + (rate * time * amount) - (amount * time);
+        System.out.print("This is your deposit sum with interest rates " + newAmount);
         for (int i = 1; i <= time; i++) {
-            float newAmount = amount + (rate * time * amount) - (amount * time);
-            System.out.print(newAmount + " ");
         }
     }
 }
