@@ -2,15 +2,15 @@ package lesson_3.operators;
 
 import java.util.Scanner;
 
-public class JavaOperators {
+public class  JavaOperators {
     public static void main(String[] args){
         // Basic operators
         // Есть три логических оператора в Джава
-        // Логический т.е. проверяет истину того или иного положения
+        // Логический, т.е. проверяет истину того или иного положения
         // Если Я программист, тогда в случае истины - одно действие, если нет - ложь - другое
 
         // if один логический оператор
-        // else if многослоенный логический оператор
+        // else if многослойный логический оператор
         // switch упорядоченный логический оператор
         setSwitch();
     }

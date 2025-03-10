@@ -11,7 +11,7 @@ public class Task6 {
     public static void squareNumber() {
         int n = 10;
         do {
-            System.out.println("Square numbers " + n * n );
+            System.out.println(n * n );
         n++;
         } while (n < 21);
     }

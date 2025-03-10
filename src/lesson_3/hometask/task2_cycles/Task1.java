@@ -6,10 +6,10 @@ package lesson_3.hometask.task2_cycles;
 public class Task1 {
 
     public static void main(String[] args) {
-        allEvenNumbers();
+        allOddNumbers();
     }
 
-    public static void allEvenNumbers() {
+    public static void allOddNumbers() {
         for (int numb = 1; numb < 100; numb++) {
             if (numb % 2 == 1) {
                 System.out.print(numb + " ");
