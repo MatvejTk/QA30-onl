@@ -1,10 +1,16 @@
 package lesson_3.hometask.task1_control_sctructures;
+
 import java.util.Scanner;
+
+// 5. По введенному номеру определить цвет радуги (1 – красный, 4 – зеленый и т. д.).
+
 public class Task5 {
+
     public static void main (String[] args) {
         rainbowColorNumber();
     }
-        public static void rainbowColorNumber() {
+
+    public static void rainbowColorNumber() {
             Scanner input = new Scanner (System.in);
             System.out.println ("Please, insert number from 1 to 7 to determine color of rainbow");
             String color = input.next();

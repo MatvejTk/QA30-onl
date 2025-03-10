@@ -1,6 +1,10 @@
 package lesson_3.hometask.task2_cycles;
-//Done
+
+// 2. Необходимо вывести на экран числа от 5 до 1
+// При решении используйте операцию декремента (--).
+
 public class Task2 {
+
     public static void main(String[] args) {
         decrement5to1();
     }

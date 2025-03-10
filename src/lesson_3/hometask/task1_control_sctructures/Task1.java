@@ -1,10 +1,16 @@
 package lesson_3.hometask.task1_control_sctructures;
+
 import java.util.Scanner;
 
+// 1. Написать программу для вывода названия поры года по номеру месяца.
+// При решении используйте оператор switch-case.
+
 public class Task1 {
+
     public static void main(String[] args) {
         setMonth();
     }
+
     public static void setMonth() {
         Scanner input = new Scanner(System.in);
         System.out.println("Please, enter month number to determine Weather Season: ");
