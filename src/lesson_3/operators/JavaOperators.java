@@ -12,7 +12,7 @@ public class  JavaOperators {
         // if один логический оператор
         // else if многослойный логический оператор
         // switch упорядоченный логический оператор
-        setSwitch();
+        setSwitch(); nonLogicalIf();
     }
 
     public static void getIfOperator(){
@@ -43,6 +43,10 @@ public class  JavaOperators {
         // if (_true)
         if (isMarried == false){
             System.out.println("Your are not married.");
+        }
+
+        if (!isMarried){
+            System.out.println("Your are not married.1");
         }
 
         // if (isEmployed == true)

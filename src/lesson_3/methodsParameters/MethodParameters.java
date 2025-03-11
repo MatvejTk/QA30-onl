@@ -1,6 +1,6 @@
 package lesson_3.methodsParameters;
 
-public class  MethodParameters {
+public class   MethodParameters {
     public static void main(String[] args) {
         getPersonalData("Archil", "Sikharulidze", 36, "Java Developer");
         System.out.println("***********************************************");

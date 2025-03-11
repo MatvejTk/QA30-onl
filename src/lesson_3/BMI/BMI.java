@@ -2,7 +2,7 @@ package lesson_3.BMI;
 
 import java.util.Scanner;
 
-public class BMI {
+public class  BMI {
     public static void main(String[] args){
         // Start & calculate BMI
         startBMI();
@@ -67,6 +67,6 @@ public class BMI {
         // Math.floor(indexBMI) - 82, 172 = 27.0
         System.out.println("Your BMI is: " + indexBMI);
         // Math.pow() - возведение в степень
-        // Math.radon() - получение псевдослучайных числ
+        // Math.randon() - получение псевдослучайных числ
     }
 }

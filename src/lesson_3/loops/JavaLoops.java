@@ -53,7 +53,7 @@ public class JavaLoops {
 
     public static void keyWords(){
         // break - ломает оператор или цикл
-        // continue - пропускает повтор код в цикле
+        // continue - пропускает итерацию кода в цикле
         // return - ломает весь метод
 
         for (int num = 1; num <= 10; num++){
