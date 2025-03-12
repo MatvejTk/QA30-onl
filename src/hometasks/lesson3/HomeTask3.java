@@ -35,14 +35,22 @@ public class HomeTask3 {
 //Для вычисления суммы с учетом процентов используйте цикл for. Пусть сумма вклада будет представлять тип float.
 
     public static void printInterest() {
+
         float rate = 0.07F;
         Scanner input = new Scanner(System.in);
         System.out.println("Please, enter amount: ");
         float amount = input.nextFloat();
         System.out.println("Please enter number of months: ");
         int time = input.nextInt();
-        float newAmount = amount + (rate * time * amount);
-        System.out.println("This is your deposit sum with interest rates per period: " + newAmount);
+        for (int month = 1; month <= time; month++) {
+            amount = amount + (amount * rate);
+        }
+        if (time < 1) {
+            System.out.println("You inserted wrong number of month. Please insert positive value");
+        }
+        else {
+            System.out.println("This is your deposit sum with interest rates per period: " + amount);
+        }
         System.out.println();
         System.out.println("----------------------------------------------");
         System.out.println();
