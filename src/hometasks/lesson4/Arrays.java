@@ -3,8 +3,11 @@ import java.util.Scanner;
 
 public class Arrays {
     public static void main(String[] args) {
-        detectArrayNumber();
+        detectArrayNumber(); removeFromArrays();
     }
+
+// 0 Создайте массив целых чисел. Напишете программу, которая выводит сообщение о том,
+// входит ли заданное число в массив или нет. Пусть число для поиска задается с консоли (класс Scanner).
 
     public static void detectArrayNumber() {
         int[] initialArray = new int[5];
@@ -29,4 +32,20 @@ public class Arrays {
             System.out.println("The array does not contain the value '" + arr + "'.");
         }
     }
+
+    // 1 Создайте массив целых чисел. Удалите все вхождения заданного числа из массива.
+    // Пусть число задается с консоли (класс Scanner). Если такого числа нет - выведите сообщения об этом.
+    // В результате должен быть новый массив без указанного числа.
+
+    public static void removeFromArrays() {
+        int [] newArray = { 1, 3, 8, 7, 4, 9, 5};
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Please, insert any integer number to check and if match remove that number from Array: ");
+        int inp = sc.nextInt();
+    }
+
+
+
+
+
 }
