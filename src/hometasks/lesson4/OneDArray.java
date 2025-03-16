@@ -2,6 +2,7 @@ package hometasks.lesson4;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
+import java.util.ArrayList;
 
 public class OneDArray {
     public static void main(String[] args) {
@@ -52,8 +53,22 @@ public class OneDArray {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please, insert any integer number to check and if match remove that number from Array: ");
         int inp = sc.nextInt();
+        boolean exists = false;
+        for (int x : array) {
+            if (x == inp) {
+                exists = true;
+                break;
+            }
+        }
+        if (exists) {
+            System.out.println("The array contains the value '" + inp + "'.");
+        } else {
+            System.out.println("The array does not contain the value '" + inp + "'.");
+        }
+        for (int index = 0; index < array.length; index++) {
+            newArray[index] = array[index];
+        }
     }
-
 // 2. + Создайте и заполните массив случайным числами и выведет максимальное, минимальное и среднее значение.
 // Для генерации случайного числа используйте метод Math.random().
 // Пусть будет возможность создавать массив произвольного размера. Пусть размер массива вводится с консоли.
@@ -127,9 +142,7 @@ public class OneDArray {
     public static void replaceArray() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Insert size of array:");
-
         int n = 0;
-
         while (n < 6 || n > 10) {
             if (sc.hasNextInt()) {
                 n = sc.nextInt();
@@ -138,25 +151,25 @@ public class OneDArray {
                 }
             }
         }
-        int[] mas1 = new int[n];
+        int[] arr1 = new int[n];
         int evenNums = 0;
 
         for (int i = 0; i < n; i++) {
-            mas1[i] = (int) (Math.random() * (n + 1));
-            if (mas1[i] % 2 == 0) {
+            arr1[i] = (int) (Math.random() * (n + 1));
+            if (arr1[i] % 2 == 0) {
                 evenNums++;
             }
         }
-        System.out.println(Arrays.toString(mas1));
-        int[] mas2 = new int[evenNums];
+        System.out.println(Arrays.toString(arr1));
+        int[] arr2 = new int[evenNums];
         int index = 0;
         for (int i = 0; i < n; i++) {
-            if (mas1[i] % 2 == 0) {
-                mas2[index] = mas1[i];
+            if (arr1[i] % 2 == 0) {
+                arr2[index] = arr1[i];
                 index++;
             }
         }
-        System.out.println(Arrays.toString(mas2));
+        System.out.println(Arrays.toString(arr2));
     }
 // 5. + Создайте массив и заполните массив. Выведите массив на экран в строку.
 // Замените каждый элемент с нечётным индексом на ноль. Снова выведете массив на экран на отдельной строке.
@@ -206,6 +219,3 @@ public static void sortArrayNames() {
         }
     }
 }
-
-
-
