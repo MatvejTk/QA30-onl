@@ -13,7 +13,7 @@ public class OneDArray {
         replaceArray();
         printToString();
         sortArrayNames();
-        sort();
+        bubbleSort();
     }
 
 // 0. + Создайте массив целых чисел. Напишете программу, которая выводит сообщение о том,
@@ -203,7 +203,7 @@ public static void sortArrayNames() {
 
 // 7. + Реализуйте алгоритм сортировки пузырьком.
 
-    public static void sort() {
+    public static void bubbleSort() {
         int[] array = {6, 8, 3, 123, 5, 4, 1, 2, 0, 9, 7};
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = array.length - 1; j > i; j--) {
