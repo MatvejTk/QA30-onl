@@ -53,20 +53,13 @@ public class OneDArray {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please, insert any integer number to check and if match remove that number from Array: ");
         int inp = sc.nextInt();
-        boolean exists = false;
-        for (int x : array) {
-            if (x == inp) {
-                exists = true;
-                break;
+        for (int i=0, j=0; i<array.length; i++) {
+            if (array[i] != inp)
+                newArray[j++] = array[i];
             }
-        }
-        if (exists) {
-            System.out.println("The array contains the value '" + inp + "'.");
-        } else {
-            System.out.println("The array does not contain the value '" + inp + "'.");
-        }
-        for (int index = 0; index < array.length; index++) {
-            newArray[index] = array[index];
+        System.out.println("\nYour new array is: ");
+        for (int el : newArray){
+            System.out.print(el + "\t");
         }
     }
 // 2. + Создайте и заполните массив случайным числами и выведет максимальное, минимальное и среднее значение.

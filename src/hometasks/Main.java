@@ -9,7 +9,6 @@ public class Main {
         list.add(8);
         list.add(9);
         list.add(1);
-        int [] newList = new ArrayList ;
         Scanner sc = new Scanner(System.in);
         System.out.println("Please, insert any integer number to check and if match remove that number from Array: ");
         int inp = sc.nextInt();
