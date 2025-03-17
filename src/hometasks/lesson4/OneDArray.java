@@ -61,7 +61,9 @@ public class OneDArray {
         for (int el : newArray){
             System.out.print(el + "\t");
         }
+        System.out.println();
     }
+
 // 2. + Создайте и заполните массив случайным числами и выведет максимальное, минимальное и среднее значение.
 // Для генерации случайного числа используйте метод Math.random().
 // Пусть будет возможность создавать массив произвольного размера. Пусть размер массива вводится с консоли.
@@ -90,6 +92,7 @@ public class OneDArray {
         System.out.println("Max value of the array is: " + max);
         System.out.println("Min value of the array is: " + min);
     }
+
 // 3. + Создайте 2 массива из 5 чисел. Выведите массивы на консоль в двух отдельных строках.
 // Посчитайте среднее арифметическое элементов каждого массива и сообщите,
 // для какого из массивов это значение оказалось больше (либо сообщите, что их средние арифметические равны).
@@ -132,9 +135,10 @@ public class OneDArray {
 // Если n не удовлетворяет условию - выведите сообщение об этом.
 // Если пользователь ввёл не подходящее число, то программа должна просить пользователя повторить ввод.
 // Создайте второй массив только из чётных элементов первого массива, если они там есть, и вывести его на экран.
+
     public static void replaceArray() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Insert size of array:");
+        System.out.println("Insert size of an array:");
         int n = 0;
         while (n < 6 || n > 10) {
             if (sc.hasNextInt()) {
@@ -144,28 +148,30 @@ public class OneDArray {
                 }
             }
         }
-        int[] arr1 = new int[n];
+        int[] newArray = new int[n];
         int evenNums = 0;
 
         for (int i = 0; i < n; i++) {
-            arr1[i] = (int) (Math.random() * (n + 1));
-            if (arr1[i] % 2 == 0) {
+            newArray[i] = (int) (Math.random() * (n + 1));
+            if (newArray[i] % 2 == 0) {
                 evenNums++;
             }
         }
-        System.out.println(Arrays.toString(arr1));
-        int[] arr2 = new int[evenNums];
+        System.out.println(Arrays.toString(newArray));
+        int[] finalArray = new int[evenNums];
         int index = 0;
         for (int i = 0; i < n; i++) {
-            if (arr1[i] % 2 == 0) {
-                arr2[index] = arr1[i];
+            if (newArray[i] % 2 == 0) {
+                finalArray[index] = newArray[i];
                 index++;
             }
         }
-        System.out.println(Arrays.toString(arr2));
+        System.out.println(Arrays.toString(finalArray));
     }
+
 // 5. + Создайте массив и заполните массив. Выведите массив на экран в строку.
 // Замените каждый элемент с нечётным индексом на ноль. Снова выведете массив на экран на отдельной строке.
+
 public static void printToString() {
     // integer array
     int[] array = {1, 2, 3, 4, 5};
@@ -194,7 +200,9 @@ public static void sortArrayNames() {
         System.out.println(name);
     }
 }
+
 // 7. + Реализуйте алгоритм сортировки пузырьком.
+
     public static void sort() {
         int[] array = {6, 8, 3, 123, 5, 4, 1, 2, 0, 9, 7};
         for (int i = 0; i < array.length - 1; i++) {
