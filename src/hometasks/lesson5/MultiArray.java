@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class MultiArray {
     public static void main(String[] args) {
         incrementMultiArray();
+        makeChessBoard();
     }
 
     public static void incrementMultiArray() {
@@ -33,16 +34,32 @@ public class MultiArray {
         System.out.println();
         System.out.println("Please, insert number on which we will increment all values of the array");
         int increment = sc.nextInt();
-        int d; int e; int f;
-        for (d = 0; d < a; d++)
-        {
-            for (e = 0; e < b; e++)
-            {
+        int d;
+        int e;
+        int f;
+        for (d = 0; d < a; d++) {
+            for (e = 0; e < b; e++) {
                 for (f = 0; f < c; f++)
                     multiArray[d][e][f] += increment;
             }
         }
         System.out.println("Here are list of your multi array incremented by your inserted number: " + increment);
-                    System.out.print(multiArray[a][b][c]);
+        System.out.print(multiArray[a][b][c]);
+    }
+
+    public static void makeChessBoard() {
+        String[][] chessBoard = new String[8][8];
+        for (int a = 0; a < 8; a++) {
+            for (int b = 0; b < 8; b++)
+                if ((a + b) % 2 == 0)
+                    chessBoard[a][b] = "W";
+                else chessBoard[a][b] = "B";
+        }
+        for (int a = 0; a < 8; a++) {
+            for (int b = 0; b < 8; b++) {
+                System.out.print(" " + chessBoard[a][b]);
+            }
+            System.out.println();
+        }
     }
 }
