@@ -40,6 +40,7 @@ public class MultiArray {
             }
         }
         System.out.println();
+        System.out.println("Randomly generated values for the array: ");
         System.out.println("Please, insert number on which we will increment all values of the array");
         int increment = sc.nextInt();
         System.out.println("Here are list of 3D array incremented by your inserted number: " + increment);
@@ -47,7 +48,7 @@ public class MultiArray {
             for (int y = 0; y < b; y++) {
                 for (int z = 0; z < c; z++) {
                     multiArray[x][y][z] +=increment;
-                    System.out.print(multiArray[x][y][z] + " " + "\t");
+                    System.out.print(" " + multiArray[x][y][z] + " ");
                 }
             }
             System.out.println();
@@ -110,42 +111,51 @@ System.out.println(" Here we do multiplication between two 2D arrays and show re
 // 3. Создайте двумерный массив целых чисел. Выведите на консоль сумму всех элементов массива.
 
     public static void sum2DArray() {
+        System.out.println("Here we make sum of all elements of 2D array");
+        System.out.println("Our 2D array");
         int[][] array2D = new int[][]{{1, 3, 6}, {7, 5, 4, 2}, {0, 9}};
         int sum = 0;
-        int[] rowSum = new int[array2D.length];
-        for (int i = 0; i < array2D.length; i++) {
-            for (int num : array2D[i]) {
+        for (int[] val : array2D) {
+            for (int num : val) {
                 sum += num;
             }
-            rowSum[i] = sum;
         }
-        System.out.println("Sum of 2D array: " + sum);
+        for (int a=0; a<3;a++){
+            for (int b=0;b<array2D[a].length;b++){
+                System.out.print(array2D[a][b] + "\t");
+            }
+
+        }
+        System.out.println();
+        System.out.println("Sum of 2D array is: " + sum);
     }
 
 // 4. Создайте двумерный массив. Выведите на консоль диагонали массива.
 
 public static void printArrayDiagonal() {
 
-    int i, j, k, n = 3, m = 3;
-    int[][] arr = {{3, 7, 9}, {2, 1, 5}, {8, 6, 4}};
-    System.out.println("Here we print all diagonals of the matrix: ");
-    for (k = 0; k <= m - 1; k++) {
-        i = k;
-        j = 0;
-        while (i >= 0) {
-            System.out.print(arr[i][j] + "\t");
-            i = i - 1;
-            j = j + 1;
+    int a, b, c;
+    int x = 3;
+    int y = 3;
+    int[][] array2D = {{8, 2, 4}, {7, 1, 9}, {5, 3, 6}};
+    System.out.println("Here we print all diagonals of the 2D array: ");
+    for (c = 0; c <= x - 1; c++) {
+        a = c;
+        b = 0;
+        while (a >= 0) {
+            System.out.print(array2D[a][b] + "\t");
+            a = a - 1;
+            b = b + 1;
         }
     }
-    for (k = 1; k <= n - 1; k++) {
-        i = m - 1;
-        j = k;
-        while (j <= n - 1) {
+    for (c = 1; c <= y - 1; c++) {
+        a = x - 1;
+        b = c;
+        while (b <= y - 1) {
 
-            System.out.print(arr[i][j] + "\t");
-            i = i - 1;
-            j = j + 1;
+            System.out.print(array2D[a][b] + "\t");
+            a = a - 1;
+            b = b + 1;
         }
     }
 }
