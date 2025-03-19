@@ -22,7 +22,7 @@ public class MultiArray {
         int a = 0;
         int b = 0;
         int c = 0;
-        System.out.println("Please, insert size of multi array: ");
+        System.out.println("Please, insert size of 3D array: ");
         Scanner sc = new Scanner(System.in);
         Random r = new Random();
         if (sc.hasNextInt()) {
@@ -42,8 +42,16 @@ public class MultiArray {
         System.out.println();
         System.out.println("Please, insert number on which we will increment all values of the array");
         int increment = sc.nextInt();
-
-        System.out.println("Here are list of your multi array incremented by your inserted number: " + increment);
+        System.out.println("Here are list of 3D array incremented by your inserted number: " + increment);
+        for (int x = 0; x < a; x++) {
+            for (int y = 0; y < b; y++) {
+                for (int z = 0; z < c; z++) {
+                    multiArray[x][y][z] +=increment;
+                    System.out.print(multiArray[x][y][z] + " " + "\t");
+                }
+            }
+            System.out.println();
+        }
     }
 
 // 1. Шахматная доска.
@@ -61,6 +69,7 @@ public class MultiArray {
 
     public static void makeChessBoard() {
         String[][] chessBoard = new String[8][8];
+        System.out.println("Here we print chess board with each cell colored in W or B letters");
         for (int a = 0; a < 8; a++) {
             for (int b = 0; b < 8; b++)
                 if ((a + b) % 2 == 0)
@@ -83,18 +92,16 @@ public class MultiArray {
     public static void multiplicationArrays() {
         int[][] array1 = {{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 0, 0}};
         int[][] array2 = {{1, 2, 3}, {1, 1, 1}, {0, 0, 0}, {2, 1, 0}};
-
-
         int[][] array3 = new int[array1.length][array2[0].length];
         for (int i = 0; i < array3[0].length; i++)
             for (int j = 0; j < array3.length; j++)
                 for (int k = 0; k < array1[0].length; k++)
                     array3[i][j] = array3[i][j] + array1[i][k] * array2[k][j];
 
-
-        for (int i = 0; i < array3.length; i++) {
+System.out.println(" Here we do multiplication between two 2D arrays and show results of the action: ");
+        for (int[] multi : array3) {
             for (int j = 0; j < array3[0].length; j++) {
-                System.out.print(" " + array3[i][j] + " ");
+                System.out.print(" " + multi[j] + " ");
             }
             System.out.println();
         }
@@ -118,40 +125,36 @@ public class MultiArray {
 // 4. Создайте двумерный массив. Выведите на консоль диагонали массива.
 
 public static void printArrayDiagonal() {
-    {
-                    int i, j, k, n=3, m=3;
-            int [][] arr = {{3, 7, 9}, {2, 1, 5}, {8, 6, 4}};
-            System.out.println("Matrix elements in diagonal form are: ");
-            for(k=0; k<=m-1; k++)
-            {
-                i=k;
-                j=0;
-                while(i>=0)
-                {
-                    System.out.print(arr[i][j]+"\t");
-                    i=i-1;
-                    j=j+1;
-                }
-            }
-            for(k=1; k<=n-1; k++)
-            {
-                i=m-1;
-                j=k;
-                while(j<=n-1)
-                {
 
-                    System.out.print(arr[i][j]+"\t");
-                    i=i-1;
-                    j=j+1;
-                }
-            }
+    int i, j, k, n = 3, m = 3;
+    int[][] arr = {{3, 7, 9}, {2, 1, 5}, {8, 6, 4}};
+    System.out.println("Here we print all diagonals of the matrix: ");
+    for (k = 0; k <= m - 1; k++) {
+        i = k;
+        j = 0;
+        while (i >= 0) {
+            System.out.print(arr[i][j] + "\t");
+            i = i - 1;
+            j = j + 1;
         }
     }
+    for (k = 1; k <= n - 1; k++) {
+        i = m - 1;
+        j = k;
+        while (j <= n - 1) {
+
+            System.out.print(arr[i][j] + "\t");
+            i = i - 1;
+            j = j + 1;
+        }
+    }
+}
 
 // 5. Создайте двумерный массив целых чисел. Отсортируйте элементы в строках двумерного массива по возрастанию.
 
     public static void sort2DArray() {
         System.out.println();
+        System.out.println("Here we make Bubble Sort for the 2D array: ");
         int[][] matrix = new int[][]{
                 {9, 8, 7},
                 {6, 5, 4},
