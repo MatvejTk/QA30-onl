@@ -2,11 +2,12 @@ package lesson_6;
 
 import lesson_6.objects.Bank;
 
-public class ObjectsGame {public static void main(String[] args) {
-    withdrawMoneyFromMyBankAccount();
-}
+public class ObjectsGame {
+    public static void main(String[] args) {
+        withdrawMoneyFromMyBankAccount();
+    }
 
-    public static void withdrawMoneyFromMyBankAccount(){
+     public static void withdrawMoneyFromMyBankAccount(){
         Bank bog = new Bank();
         bog.bankName = "Bank of Georgia";
         bog.bankAddress = "Tbilisi, Republic of Georgia";
