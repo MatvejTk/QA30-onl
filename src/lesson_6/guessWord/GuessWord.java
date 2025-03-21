@@ -51,7 +51,7 @@ public class GuessWord {
             System.out.println("*****************************************************************************");
 
             while(true) {
-                System.out.print("Please, enter a LETTER or a WHOLE WORLD to GUESS: ");
+                System.out.print("Please, enter a LETTER or a WHOLE WORD to GUESS: ");
 
                 String input = input().nextLine();
 
