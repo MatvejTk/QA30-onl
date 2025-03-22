@@ -2,7 +2,7 @@ package hometasks.lesson6;
 
 import java.util.Scanner;
 
-public class ChargeMoney {
+public class CreditCardManipulation {
     public static void main(String[] args) {
         chargeMoney();
         withdrawMoney();

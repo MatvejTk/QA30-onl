@@ -1,7 +1,8 @@
-package lesson_6.guessWord;
+package hometasks.lesson7;
 
 import java.util.Random;
 import java.util.Scanner;
+
 
 public class GuessWord {
     public static void main(String[] args){
@@ -96,7 +97,7 @@ public class GuessWord {
 
     public static boolean playGame(){
         System.out.println("****************************************************************************");
-        System.out.print("Would you like to play a GAME? (y - YES, the rest NO): ");
+        System.out.println("Would you like to play a GAME? (y - YES, the rest NO): ");
 
         return input().nextLine().equalsIgnoreCase("y");
     }

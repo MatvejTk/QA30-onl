@@ -6,33 +6,6 @@ public class CreditCard {
     public long accountNumber;
     public double accountBalance;
     public long transaction;
-    public void chargeMoney() {
-        CreditCard card = new CreditCard();
-        System.out.println("Please insert amount on which we will charge bank card: ");
-        Scanner sc = new Scanner(System.in);
-        transaction = sc.nextInt();
-        if (accountBalance > transaction) {
-            accountBalance += transaction;
-            System.out.println("Your current balance is: " + accountBalance);
-        } else if (card.transaction < 0) {
-            System.out.println("Your balance can't be negative. Transaction declined");
-        }
-    }
-    public void withdrawMoney(){
-        if (transaction > accountBalance){
-            System.out.println("Your account balance can't go in negative amount.");
-            System.out.println("Operation declined");
-        }
-        else {
-            accountBalance -= transaction;
-            System.out.println("Transaction has completed successfully");
-            System.out.println("Account balance has been updated");
-        }
-    }
-
-    public void accountBalance(){
-        System.out.println("Here are bank account balance for all your cards: " + accountBalance);
-    }
 }
 
 //  Домашнее задание
