@@ -2,7 +2,7 @@ package lesson_6;
 
 import lesson_6.objects.Bank;
 
-public class ObjectsGame {
+public class ObjectsBanks {
     public static void main(String[] args) {
         withdrawMoneyFromMyBankAccount();
     }
