@@ -3,6 +3,8 @@ package hometasks.lesson7;
 import java.util.Random;
 import java.util.Scanner;
 
+import static lesson_6.tictactoe.GameTicTacToe.input;
+
 
 public class GuessWord {
     public static void main(String[] args){
@@ -55,10 +57,14 @@ public class GuessWord {
                 System.out.print("Please, enter a LETTER or a WHOLE WORD to GUESS: ");
 
                 String input = input().nextLine();
+                if (input.isEmpty()) {
+                    System.out.println("Please insert letter or word");
+                }
 
                 // ДОБАВИТЬ! А что если я ничего не ввел? Сделать проверку и дать мне возможность
                 // ДОБАВИТЬ! Исправить свою ошибку!
                 if (input.length() == 1) {
+
                     // Если я ввел ОДНУ БУКВУ
                     // 1. Проверить, есть ли такая буква
                     // Если нету, продолжаем

@@ -1,11 +1,17 @@
 package hometasks.lesson6.atm;
-
+import java.util.Scanner;
+import java.util.Random;
 public class ATM {
-    public int banknoteOne = 20;
-    public int banknoteTwo = 50;
-    public int banknoteThree = 100;
+    public int banknoteOne;
+    public int banknoteTwo;
+    public int banknoteThree;
 
-    ATM newATM = newATM (banknoteOne, banknoteTwo, banknoteThree);
+    public ATM (int banknoteOne, int banknoteTwo, int banknoteThree){
+        this.banknoteOne = banknoteOne;
+        this.banknoteTwo = banknoteTwo;
+        this.banknoteThree = banknoteThree;
+    }
+
 }
 //  2. Создать класс, описывающий банкомат.
 //  Набор купюр, находящихся в банкомате, должен задаваться тремя свойствами: количеством купюр номиналом 20, 50 и 100.
