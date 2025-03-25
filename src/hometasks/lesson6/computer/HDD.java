@@ -1,9 +1,22 @@
 package hometasks.lesson6.computer;
 
 public class HDD {
-    public HDD(String name, int volume, String type) {
-        name = "Samsung";
-        volume = 2048;
-        type = "External";
+    private String model;
+    private String type;
+    private double capacity;
+
+    public HDD(String model, String type, double capacity) {
+        this.model = model;
+        this.type = type;
+        this.capacity = capacity;
+    }
+    public HDD() {
+    }
+      @Override
+    public String toString() {
+        return "HDD:\n" +
+                "\t\tModel = " + this.model + "\n" +
+                "\t\tType = " + this.type + "\n" +
+                "\t\tCapacity = " + this.capacity;
     }
 }
