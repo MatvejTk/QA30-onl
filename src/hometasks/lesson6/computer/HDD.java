@@ -1,4 +1,4 @@
-package hometasks.lesson6;
+package hometasks.lesson6.computer;
 
 public class HDD {
     public HDD(String name, int volume, String type) {

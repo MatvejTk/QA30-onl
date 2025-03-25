@@ -1,6 +1,4 @@
-package hometasks.lesson6;
-
-import java.util.Scanner;
+package hometasks.lesson6.creditCard;
 
 public class CreditCard {
     public long accountNumber;

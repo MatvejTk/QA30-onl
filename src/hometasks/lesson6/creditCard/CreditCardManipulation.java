@@ -1,4 +1,4 @@
-package hometasks.lesson6;
+package hometasks.lesson6.creditCard;
 
 import java.util.Scanner;
 

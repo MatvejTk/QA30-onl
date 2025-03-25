@@ -1,4 +1,4 @@
-package hometasks.lesson6;
+package hometasks.lesson6.computer;
 
 public class Computer {
     public int price;
