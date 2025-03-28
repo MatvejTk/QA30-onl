@@ -17,12 +17,6 @@ public class Phone {
         System.out.println(number + "\t" + model + "\t" + weight);
     }
 
-    public void receiveCall(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Who calls:");
-        String name = scanner.next();
-        System.out.println(name);
-    }
     public Phone(int number, String model) {
         this.number = number;
         this.model = model;
