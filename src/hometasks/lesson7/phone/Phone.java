@@ -1,8 +1,6 @@
 package hometasks.lesson7.phone;
 
-import java.util.Scanner;
-
-public class Phone {
+class Phone {
     int number;
     String model;
     int weight;

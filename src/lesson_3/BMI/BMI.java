@@ -67,6 +67,6 @@ public class  BMI {
         // Math.floor(indexBMI) - 82, 172 = 27.0
         System.out.println("Your BMI is: " + indexBMI);
         // Math.pow() - возведение в степень
-        // Math.randon() - получение псевдослучайных числ
+        // Math.random() - получение псевдослучайных числ
     }
 }

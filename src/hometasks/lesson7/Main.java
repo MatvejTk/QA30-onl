@@ -31,3 +31,12 @@ public class Main {
 //  Если план лечения имеет код 1 – назначить хирурга и выполнить метод лечить.
 //  Если план лечения имеет код 2 – назначить дантиста и выполнить метод лечить.
 //  Если план лечения имеет любой другой код – назначить выполнить метод лечить.
+/*
+    Создаем класс Клиника
+    Создаем класс врач
+    доктор - метод лечить
+    переписать под других врачей
+    if broke bounce then operation if illness then check-up if teeth pain then teeth clean
+    if surgeon (Operation) else if therapist (Check-up) else if dentist (Teeth clean) else (You inserted wrong number)
+    пациент if 1 then operation if 2 then check-up if 3 then teeth clean
+ */
