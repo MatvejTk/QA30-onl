@@ -1,9 +1,10 @@
 package hometasks.lesson7;
+
 import java.util.Random;
 import java.util.Scanner;
 
 public class GuessWord {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         // Wheel of Fortune или поле чудес, угадай слово
         startGame();
         // Алгоритм - это определенное количество операций,
@@ -27,10 +28,10 @@ public class GuessWord {
         // Если нет, прощайте, если да, все ЗАНОВО.
     }
 
-    public static void startGame() {
+    public static void startGame(){
         getIntroductoryMsg();
 
-        if (playGame()) {
+        if (playGame()){
             getInstructions();
 
             // getRandomWord() метод принимает результат работы метода words()
@@ -49,7 +50,7 @@ public class GuessWord {
             showWord(hiddenWord);
             System.out.println("*****************************************************************************");
 
-            while (true) {
+            while(true) {
                 System.out.print("Please, enter a LETTER or a WHOLE WORD to GUESS: ");
 
                 String input = input().nextLine();
@@ -75,7 +76,7 @@ public class GuessWord {
                     // String.valueOf() -> превращает значения в строчку
                     // после этого .equalsIgnoreCase(_значение) - проверить слова на совпадение
                     // без учета регистра
-                    if (checkWord(input, hiddenWord)) {
+                    if (checkWord(input, hiddenWord)){
                         System.out.println("YOU HAVE GUESSED THE WORD. YOU HAVE WON!");
                         return;
                     } else {
@@ -88,25 +89,25 @@ public class GuessWord {
         }
     }
 
-    public static void getIntroductoryMsg() {
+    public static void getIntroductoryMsg(){
         System.out.println("Welcome to Guess Word Game. The PC randomly selects words and hides it.");
         System.out.println("You should guess the word. If you are successful - YOU WIN.");
     }
 
-    public static boolean playGame() {
+    public static boolean playGame(){
         System.out.println("****************************************************************************");
         System.out.print("Would you like to play a GAME? (y - YES, the rest NO): ");
 
         return input().nextLine().equalsIgnoreCase("y");
     }
 
-    public static void getInstructions() {
+    public static void getInstructions(){
         System.out.println("The AI have created a set of hidden words. It stored these words in an array.");
         System.out.println("The random number has been generated to randomly select a word from the array.");
         System.out.println("You should guess the word either by a LETTER or a FULL WORD.");
     }
 
-    public static String[] words() {
+    public static String[] words(){
         return new String[]{
                 "Apple", "House", "Car", "Stone", "Dragon",
                 "Vehicle", "Pineapple", "Watermelon", "Globe", "Tree",
@@ -115,24 +116,24 @@ public class GuessWord {
         };
     }
 
-    public static String getRandomWord(String[] hiddenWords) {
+    public static String getRandomWord(String[] hiddenWords){
         // верни мне массив hiddenWords[создай случайное число от 0 до длины массива]
         // если массив длиной в 20 элементов - то случайное число буде от 0 до 20, 0-19
         return hiddenWords[new Random().nextInt(0, hiddenWords.length)];
     }
 
-    public static void showWord(char[] word) {
-        for (char letter : word) {
+    public static void showWord(char[] word){
+        for (char letter : word){
             System.out.print(letter + "\t");
         }
         System.out.println();
     }
 
-    public static boolean checkWord(String input, char[] word) {
+    public static boolean checkWord(String input, char[] word){
         return String.valueOf(word).equalsIgnoreCase(input);
     }
 
-    public static Scanner input() {
+    public static Scanner input(){
         return new Scanner(System.in);
     }
 }
