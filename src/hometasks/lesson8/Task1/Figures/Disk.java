@@ -1,8 +1,7 @@
-package hometasks.lesson8.Task1.Shapes;
+package hometasks.lesson8.Task1.Figures;
 
-public class Disk extends Shape {
+public class Disk extends Figure {
     private final double radius;
-
 
     public Disk(double radius) {
         this.radius = radius;

@@ -1,11 +1,11 @@
-package hometasks.lesson8.Task1.Shapes;
+package hometasks.lesson8.Task1.Figures;
 
-public class Tetragon extends Shape{
+public class Rectangle extends Figure {
     private final double a,b;
 
-    public Tetragon (double a, double b) {
-        this.a = a;
-        this.b = b;
+    public Rectangle(double sideA, double sideB) {
+        this.a = sideA;
+        this.b = sideB;
             }
     @Override
     public double getSquare(){

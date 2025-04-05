@@ -2,7 +2,7 @@ package lesson_7.staff;
 
 public class ITMember extends Staff{
     public ITMember(String name, String surname, String position, int age, int mobileNumber) {
-        // Ключевое слово super ДОЛЖЕН ВСЕГДА БЫТЬ ПЕРВОЙ СТРОЧКОЙ В ДЕЧЕРНЕМ КЛАССЕ, ЕСЛИ МЫ НАСЛЕДУЕМСЯ
+        // Ключевое слово super ДОЛЖЕН ВСЕГДА БЫТЬ ПЕРВОЙ СТРОЧКОЙ В ДОЧЕРНЕМ КЛАССЕ, ЕСЛИ МЫ НАСЛЕДУЕМСЯ
         // ОНО передает все параметры в супер класс
         super(name, surname, position, age, mobileNumber);
 
