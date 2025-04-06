@@ -1,7 +1,29 @@
 package hometasks.lesson8.Task3;
 
+import java.util.Date;
+
 public class Main {
+    public static void main(String[] args){
+        Register register = new Register();
+        SupplyContract supplyContract = new SupplyContract
+                (10001, new Date(), "Food", 10);
+        EmployeeContract employeeContract = new EmployeeContract
+                (20001, new Date(), new Date(), "John Doe");
+        Invoice invoice = new Invoice
+                (30001, new Date(), 1000, 1231);
+
+        register.saveDocument(supplyContract);
+        register.saveDocument(employeeContract);
+        register.saveDocument(invoice);
+
+        for (int i = 0; i < register.documents.length; i++) {
+            if (register.documents[i] != null) {
+                register.getDocumentInfo(register.documents[i]);
+            }
+        }
+    }
 }
+
 // 3. Создать систему для учета документов.
 // Создать класс Регистр, который будет иметь методы:
 // - сохранения документа в регистре
@@ -19,7 +41,6 @@ public class Main {
 // 2) Контракт с сотрудником
 // Содержит поля:
 // - Номер документа
-// - Дата документа
 // - Дата документа
 // - Дата окончания контракта
 // - Имя сотрудника
