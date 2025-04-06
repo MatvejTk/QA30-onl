@@ -8,6 +8,8 @@ public class Invoice extends Document{
 
     public Invoice(int docNumber, Date docDate, int sumPrice, int departmentID) {
         super(docNumber, docDate);
+        this.sumPrice = sumPrice;
+        this.departmentID = departmentID;
     }
     public int getDocNumber(){
         return docNumber;

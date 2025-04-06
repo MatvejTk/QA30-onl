@@ -8,6 +8,8 @@ public class EmployeeContract extends Document{
 
     public EmployeeContract(int docNumber, Date docDate, Date contractEndDate, String employeeName) {
         super(docNumber, docDate);
+        this.contractEndDate = contractEndDate;
+        this.employeeName = employeeName;
     }
     public int getDocNumber(){
         return docNumber;

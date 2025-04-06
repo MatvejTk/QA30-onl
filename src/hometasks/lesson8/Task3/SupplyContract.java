@@ -9,6 +9,8 @@ public class SupplyContract extends Document{
     public SupplyContract
             (int docNumber, Date docDate, String cargoType, int cargoAmount) {
         super(docNumber, docDate);
+        this.cargoType = cargoType;
+        this.cargoAmount = cargoAmount;
     }
     public int getDocNumber(){
         return docNumber;
