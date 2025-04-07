@@ -10,7 +10,7 @@ public class Main {
         EmployeeContract employeeContract = new EmployeeContract
                 (20001, new Date(), new Date(), "John Doe");
         Invoice invoice = new Invoice
-                (30001, new Date(), 1000, 1231);
+                (30001, new Date(), 1000, 1);
 
         register.saveDocument(supplyContract);
         register.saveDocument(employeeContract);
