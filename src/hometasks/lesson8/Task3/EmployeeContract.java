@@ -11,9 +11,7 @@ public class EmployeeContract extends Document{
         this.contractEndDate = contractEndDate;
         this.employeeName = employeeName;
     }
-    public int getDocNumber(){
-        return docNumber;
-    }
+
     @Override
     public void getInfo() {
         System.out.println("Contract number " + docNumber + "\n" + "Contract date " + docDate + "\n" +

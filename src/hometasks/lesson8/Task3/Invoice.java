@@ -11,9 +11,6 @@ public class Invoice extends Document{
         this.sumPrice = sumPrice;
         this.departmentID = departmentID;
     }
-    public int getDocNumber(){
-        return docNumber;
-    }
 
     @Override
     public void getInfo () {

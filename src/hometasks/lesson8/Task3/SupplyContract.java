@@ -12,9 +12,6 @@ public class SupplyContract extends Document{
         this.cargoType = cargoType;
         this.cargoAmount = cargoAmount;
     }
-    public int getDocNumber(){
-        return docNumber;
-    }
 
     @Override
     public void getInfo () {
