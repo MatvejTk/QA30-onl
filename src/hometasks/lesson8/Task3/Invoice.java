@@ -3,8 +3,8 @@ package hometasks.lesson8.Task3;
 import java.util.Date;
 
 public class Invoice extends Document{
-    private int sumPrice;
-    private int departmentID;
+    private final int sumPrice;
+    private final int departmentID;
 
     public Invoice(int docNumber, Date docDate, int sumPrice, int departmentID) {
         super(docNumber, docDate);

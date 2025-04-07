@@ -3,8 +3,8 @@ package hometasks.lesson8.Task3;
 import java.util.Date;
 
 public class EmployeeContract extends Document{
-    private Date contractEndDate;
-    private String employeeName;
+    private final Date contractEndDate;
+    private final String employeeName;
 
     public EmployeeContract(int docNumber, Date docDate, Date contractEndDate, String employeeName) {
         super(docNumber, docDate);
