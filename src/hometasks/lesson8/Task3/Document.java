@@ -6,7 +6,7 @@ public abstract class Document {
     public int docNumber;
     public Date docDate;
 
-    public void getInfo() {
+    void getInfo() {
     }
     public Document (int docNumber, Date docDate){
         this.docNumber = docNumber;
