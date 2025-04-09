@@ -6,11 +6,11 @@ public class Main {
     public static void main(String[] args){
         Register register = new Register();
         SupplyContract supplyContract = new SupplyContract
-                (10001, new Date(), "Food", 10);
+                ("10001", new Date(), "Food", 100);
         EmployeeContract employeeContract = new EmployeeContract
-                (20001, new Date(), new Date(), "John Doe");
+                ("20001", new Date(), new Date(), "John Doe");
         Invoice invoice = new Invoice
-                (30001, new Date(), 1000, 1);
+                ("30001", new Date(), 1000, 1);
 
         register.saveDocument(supplyContract);
         register.saveDocument(employeeContract);
@@ -56,7 +56,7 @@ public class Main {
 //   При добавлении документа в регистр этот добавляемый документ должен добавляться в массив;
 // - Массив для класса регистра должен быть размером 10;
 // - Для полей "Дата документа" следует использовать тип данных Date;
-// - В методе предоставления информации о документе вывести на экран информацию о переданном входном параметре документа;
+// - В методе предоставления сведений о документе вывести на экран информацию о переданном входном параметре документа;
 // - Каждый класс для описания документов должен содержать конструктор с параметрами и без;
 // - Для имитации работы системы создайте класс Main, который будет содержать только один метод public static void main
 //   В этом методе напишите код для создания каждого из типов документов,
