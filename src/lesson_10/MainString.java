@@ -21,7 +21,7 @@ public class MainString {
         System.out.println(string);
         string.append(" is a nice guy.");
         System.out.println(string);
-        string.replace(0, 1, "R");
+        string.replace(0, 1, "MySetCollection");
         System.out.println(string);
     }
 
