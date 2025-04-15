@@ -1,8 +1,8 @@
-package lesson_2.examples;
+package lesson_2.example;
 
 import java.util.Scanner;
 
-public class BmiCalc {
+public class MyBMICalculator {
     public static void main(String[] args){
         // BMI Calculator
         // Body Mass Index Calculator - это формула, которая высчитывает ваши данные исходя из роста и веса.

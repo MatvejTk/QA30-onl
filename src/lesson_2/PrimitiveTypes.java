@@ -1,11 +1,11 @@
 // Директория в Джава называется пакет
-package lesson_2_varibles_github;
+package lesson_2;
 
-public class MainPrimitiveTypes {
+public class PrimitiveTypes {
     public static void main(String[] args){
-        // Method call
-        getArithmeticOperations();
-    }
+    // Method call
+    getArithmeticOperations();
+}
 
     // Methods
     public static void getBasicVariables(){
@@ -16,7 +16,7 @@ public class MainPrimitiveTypes {
         // INTEGER - целочисленные
 
         // Все, что окрашено оранжевым является ключевым словом (keyword)
-        // Ключевое слово в Джава, это зарезервированное самим языков слово, его нельзя отдельно использовать
+        // Ключевое слово в Джава, это зарезервированное самим языков слово, его нельзя отель использовать
         // Минимальная единица работы для программиста это 1 байт, который вмещает в себя 8 битов
         // byte может в себя вмещать 8 битов, это 1 байт
         // -128...... (-0) 0, 1, 2 = (максимальное значение в минусе - 1)
@@ -25,7 +25,7 @@ public class MainPrimitiveTypes {
         // В таком случае, или значения пойдут по кругу или будет неопределенное поведение.
         byte myByte = 124;
         short myShort = 21345;
-        int myInteger = 2_000_294_000; // _ просто выделитель для программиста, чтобы понять количество числ,
+        int myInteger = 2_000_294_000; // _ просто виделитель для программиста, чтобы понять количество числ,
         // компилятор его не видит
         // int -2_000_000_000 til 2_000_000_000
         // long > int, long value = 2_000_000_000 -> int, long value = 10L;
@@ -38,7 +38,7 @@ public class MainPrimitiveTypes {
 
         // ЦЕЛОЧИСЛЕННЫЙ, НО ЗНАК, CHAR -> CHARACTER
         // ASCII Table
-        // Это таблица символов, char показывает символ, но под капотом у него таблица с числовыми значения
+        // Это таблица символов, char показывает символ, но под копотом у него таблица с числовыми значения
         char letter = 'G';
         System.out.println("Character: " + letter + ". Let's is its integer value: " + (int) letter);
         letter = 'g';
@@ -49,7 +49,7 @@ public class MainPrimitiveTypes {
 
         // 5 + 6 * 10 -- 6 * 10 + 5, (5+6)*10
 
-        // ЗНАЧЕНИЯ С ПЛАВАЮЩЕЙ ЗАПЯТОЙ
+        // ЗНАЧЕНИЯ С ПЛАВАЮЗЩЕЙ ЗАПЯТОЙ
         float myFloat = 45.3457F;
         double myDouble = 45.4571658498;
 
